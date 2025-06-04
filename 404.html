@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>404 Page Not Found</title>
+  <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #d5002c 0%, #7a2a7e 30%, #004aad 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      min-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 30px;
+      width: 100%;
+      background: rgba(221, 221, 221, 0.1);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .text-group {
+      text-align: center;
+    }
+
+    .text-group h3 {
+      margin: 2px 0;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    .text-group h4 {
+      margin: 2px 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .error-number {
+      font-size: 200px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .error-text {
+      font-size: 32px;
+      margin: 10px 0 30px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .error-number {
+        font-size: 150px;
+      }
+      
+      .error-text {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo">
+      <div class="text-group">
+        <h3>REPUBLIC OF THE PHILIPPINES</h3>
+        <h4>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h4>
+        <h4>ALAMINOS, LAGUNA</h4>
+      </div>
+      <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="error-number">404</h1>
+    <p class="error-text">Page Not Found</p>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+</html>
