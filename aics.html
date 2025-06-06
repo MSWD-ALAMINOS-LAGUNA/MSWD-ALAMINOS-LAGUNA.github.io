@@ -70,7 +70,9 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        margin: 30px 320px 30px;
+        margin: 30px auto;
+        padding: 0 20px;
+        max-width: 1200px;
       }
 
       .service-column {
@@ -79,6 +81,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: center;
       }
 
       .service-card {
@@ -91,6 +94,9 @@
         text-transform: uppercase;
         cursor: pointer;
         transition: transform 0.3s;
+        width: 100%;
+        min-width: 400px;
+        text-align: center;
       }
 
       .service-card:hover {
@@ -100,6 +106,50 @@
       @media (max-width: 768px) {
         .service-column {
           min-width: 100%;
+          padding: 0 10px;
+        }
+        
+        .services {
+          margin: 30px 0;
+        }
+        
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+        
+        .logo {
+          max-width: 80px;
+          margin: 10px 0;
+        }
+        
+        .text-group {
+          padding: 10px;
+        }
+        
+        .text-group h3 {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          max-width: 60px;
+        }
+        
+        .text-group h3 {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+        
+        .subtitle {
+          font-size: 16px;
+        }
+        
+        .service-card {
+          font-size: 16px;
+          padding: 15px;
         }
       }
     </style>
@@ -121,29 +171,27 @@
       Municipal Social Welfare and Development Office Programs and Services
     </h2>
 
-   
-
     <div class="services">
       <div class="service-column">
-        <a href="404.html">
+        <a href="assistance1.html">
           <div class="service-card">TRANSPORTATION ASSISTANCE</div>
         </a>
-         <a href="404.html">
+         <a href="assistance2.html">
           <div class="service-card">MEDICAL ASSISTANCE</div>
         </a>
-        <a href="404.html">
+        <a href="assistance3.html">
           <div class="service-card">BURIAL ASSISTANCE</div>
         </a>
-         <a href="404.html">
+         <a href="assistance4.html">
           <div class="service-card">EDUCATIONAL ASSISTANCE</div>
         </a>
-         <a href="404.html">
+         <a href="assistance5.html">
           <div class="service-card">FOOD ASSISTANCE</div>
         </a>
-        <a href="404.html">
+        <a href="assistance6.html">
           <div class="service-card">CASH RELIEF ASSISTANCE</div>
         </a>
-        <a href="404.html">
+        <a href="assistance7.html">
           <div class="service-card">PSYCHOSOCIAL SUPPORT</div>
         </a>
       </div>

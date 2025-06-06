@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistance - Municipal Social Welfare and Development Office</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #e62727, #9e154b, #3a116b);
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        align-items: center;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+
+      .logo {
+        height: 60px;
+        width: auto;
+      }
+
+      .text-group {
+        text-align: center;
+      }
+
+      .text-group h3 {
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .main-content {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+      }
+
+      .content-title {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .content-text {
+        margin-bottom: 25px;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .links {
+        margin-bottom: 30px;
+      }
+
+      .links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        transition: opacity 0.3s;
+      }
+
+      .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+      }
+
+      .pagination a {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+
+        .logo {
+          max-width: 80px;
+          height: auto;
+          margin: 10px 0;
+        }
+
+        .text-group {
+          padding: 10px;
+        }
+
+        .text-group h3 {
+          font-size: 14px;
+        }
+
+        .content-title {
+          font-size: 1.5rem;
+        }
+
+        .content-text {
+          font-size: 0.9rem;
+        }
+
+        .pagination a {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          max-width: 60px;
+        }
+
+        .text-group h3 {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+
+        .content-title {
+          font-size: 1.3rem;
+        }
+
+        .content-text {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+        <div class="text-group">
+          <h3>REPUBLIC OF THE PHILIPPINES</h3>
+          <h3>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h3>
+          <h3>ALAMINOS, LAGUNA</h3>
+        </div>
+        <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1 class="content-title">Transportation Assistance</h1>
+      <p class="content-text" id="content-text">
+        Assistance for the purchase or payment of transport (air/sea/land) or
+        expenses to enable the client to return to his home province or seek
+        further medical interventions in another place or to attend to emergency
+        concerns such as death, critical situations of family members or other
+        individuals in need. This includes those that require immediate
+        presence, such as but not limited to, attendance to a court hearing,
+        rescue of abused or trafficked relatives.
+      </p>
+      <br />
+      <div class="Quali hidden" id="Quali">
+        <h2>Criteria of Eligibility:</h2>
+        <br />
+        <li>Must be a resident in the municipality</li>
+        <li>
+          Must demonstrate an urgent need for transportation due to a crisis
+          situation medical condition, rescue of abused, court hearing, death,
+          and critical situations of family members.
+        </li>
+        <li>Must belong to a low-income or financially distressed household</li>
+        <br /><br />
+        <h2>Specific Crisis Situations</h2>
+        Covered Applicants may qualify for transportation assistance if they
+        fall under any of the following categories: <br /><br />
+        <ol>
+          <h3>a. Medical-Related Emergency</h3>
+        </ol>
+        <li>
+          Individuals requiring immediate medical treatment in another location
+          due to the unavailability of necessary healthcare services in their
+          current area.
+        </li>
+        <li>
+          Patients requiring referral or transfer to a specialized medical
+          facility for further treatment.
+        </li>
+        <li>
+          Individuals needing medical evacuation (e.g., air or sea transport)
+          for life-threatening conditions.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>b. Humanitarian and Social Welfare Needs</h3>
+        </ol>
+        <li>
+          Individuals or families displaced due to natural disasters, armed
+          conflict, or other emergencies and needing transportation back to
+          their home province or safe location.
+        </li>
+        <li>
+          Survivors of domestic abuse, human trafficking, or other forms of
+          exploitation who need transportation for rescue, reintegration, or
+          legal proceedings.
+        </li>
+        <li>
+          Individuals traveling to attend court hearings related to legal
+          matters such as child custody, domestic abuse, or criminal cases
+          involving them or their dependents.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>c. Family and Personal Emergencies</h3>
+        </ol>
+        <li>
+          Individuals needing to travel due to the death of an immediate family
+          member (e.g., spouse, parent, child, or sibling).
+        </li>
+        <li>
+          Individuals who must urgently attend to a critical health situation of
+          a close family member in another location.
+        </li>
+        <li>
+          Individuals needing to assist in the rescue or recovery of a missing,
+          kidnapped, or trafficked relative.
+        </li>
+      </div>
+      <br />
+      <div class="Reqs hidden" id="Reqs">
+        <ol>
+          <h3>Requirements</h3>
+          <br>
+          <li>
+            Updated Original Certificate of Indigency from Barangay with proof
+            of low income
+          </li>
+          <li>Medical Certificate referral (for medical transport request)</li>
+          <li>
+            Death Certificate or Medical Report of a Relative (for family
+            emergency)
+          </li>
+          <li>
+            Police Report or legal documents (for cases of abuse, transferring
+            or court related cases).
+          </li>
+          <li>ID of authorized representative and Authorization Letter</li>
+          <li>ID of patient</li>
+          <li>
+            Proof of Relationship (Birth Certificate, Marriage Certificate)
+          </li>
+        </ol>
+      </div>
+      <br />
+      <div class="links">
+        <a href="#" id="quali-link"
+          >Click here to Read Qualifications/Eligibility</a
+        >
+        <a href="#" id="reqs-link">Click here to Read Requirements</a>
+      </div>
+
+      <div class="pagination">
+        <a href="aics.html" onclick="showPage('aics')">Back</a>
+        <a href="assistance1.html" onclick="showPage(1)" class="active">1</a>
+        <a href="assistance2.html" onclick="showPage(2)">2</a>
+        <a href="assistance3.html" onclick="showPage(3)">3</a>
+        <a href="assistance4.html" onclick="showPage(4)">4</a>
+        <a href="assistance5.html" onclick="showPage(5)">5</a>
+        <a href="assistance6.html" onclick="showPage(6)">6</a>
+        <a href="assistance7.html" onclick="showPage(7)">7</a>
+        <a href="assistance2.html" onclick="showPage('next')">Next</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contentText = document.getElementById("content-text");
+        const Quali = document.getElementById("Quali");
+        const Reqs = document.getElementById("Reqs");
+
+        Quali.style.display = "none";
+        Reqs.style.display = "none";
+
+        document
+          .getElementById("quali-link")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            contentText.style.display = "none";
+            Reqs.style.display = "none";
+            Quali.style.display =
+              Quali.style.display === "none" ? "block" : "none";
+          });
+
+        document
+          .getElementById("reqs-link")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            contentText.style.display = "none";
+            Quali.style.display = "none";
+            Reqs.style.display =
+              Reqs.style.display === "none" ? "block" : "none";
+          });
+
+        function showPage(page) {
+          const links = document.querySelectorAll(".pagination a");
+
+          links.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          if (event.target.classList.contains("pagination")) {
+            event.target.classList.add("active");
+          }
+
+          console.log("Navigating to page:", page);
+        }
+      });
+    </script>
+  </body>
+</html>

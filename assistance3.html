@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistance - Municipal Social Welfare and Development Office</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #e62727, #9e154b, #3a116b);
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        align-items: center;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+
+      .logo {
+        height: 60px;
+        width: auto;
+      }
+
+      .text-group {
+        text-align: center;
+      }
+
+      .text-group h3 {
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .main-content {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+      }
+
+      .content-title {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .content-text {
+        margin-bottom: 25px;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .links {
+        margin-bottom: 30px;
+      }
+
+      .links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        transition: opacity 0.3s;
+      }
+
+      .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+      }
+
+      .pagination a {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+
+        .logo {
+          max-width: 80px;
+          height: auto;
+          margin: 10px 0;
+        }
+
+        .text-group {
+          padding: 10px;
+        }
+
+        .text-group h3 {
+          font-size: 14px;
+        }
+
+        .content-title {
+          font-size: 1.5rem;
+        }
+
+        .content-text {
+          font-size: 0.9rem;
+        }
+
+        .pagination a {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          max-width: 60px;
+        }
+
+        .text-group h3 {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+
+        .content-title {
+          font-size: 1.3rem;
+        }
+
+        .content-text {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+        <div class="text-group">
+          <h3>REPUBLIC OF THE PHILIPPINES</h3>
+          <h3>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h3>
+          <h3>ALAMINOS, LAGUNA</h3>
+        </div>
+        <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1 class="content-title">Burial Assistance</h1>
+      <p class="content-text" id="content-text">
+        assistance given to beneficiaries to help them shoulder the cost of funeral and related expenses including cases of bringing home the bodies of their deceased loved ones, due to a disaster, calamity and/or critical events.
+      </p>
+       <br />
+      <div class="Quali hidden" id="Quali">
+        <h2>Criteria of Eligibility:</h2>
+        <br />
+        <li>Must be a resident in the municipality</li>
+        <li>The applicant must be a legal spouse, child, parent, or legal guardian of the deceased</li>
+        <li>The applicant must demonstrate financial incapacity to cover funeral expenses.</li>
+        <li>The family belongs to a low-income household and cannot afford burial expenses</li>
+        <br /><br />
+        <h2>Qualifying Crisis Situations</h2>
+        Applicants may be eligible for burial assistance if the death occurred under any of the following circumstances: <br /><br />
+        <ol>
+          <h3>a. Financial Hardship</h3>
+        </ol>
+        <li>
+          The family belongs to a low-income household and cannot afford burial expenses.
+        </li>
+        <li>
+          The deceased was the primary breadwinner, leaving the family financially unstable.
+        </li>
+        <li>
+          The family has no access to insurance, pension, or other financial aid for funeral costs.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>b. Death Due to a Disaster or Calamity</h3>
+        </ol>
+        <li>
+          Death caused by a natural disaster (e.g., typhoon, earthquake, flood, landslide, fire).
+        </li>
+        <li>
+          Death caused by a man-made disaster (e.g., armed conflict, vehicular accident, structural collapse).
+        </li>
+        <li>
+          Multiple casualties in the same family due to the disaster.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>c. Death Due to a Critical Event or Emergency</h3>
+        </ol>
+        <li>Death caused by accidents, sudden medical emergencies, or violence (e.g., homicide, fire, drowning, electrocution).</li>
+        <li>Cases where the body needs repatriation from another city, province, or country.</li>
+      </div>
+      <br />
+      <div class="Reqs hidden" id="Reqs">
+        <ol>
+          <h3>Requirements</h3>
+          <br>
+          <li>Updated Original Certificate of Indigency from Barangay proving financial incapacity</li>
+          <li>Death Certificate</li>
+          <li>Funeral Contract</li>
+          <li>Original or certified true copy of Official Receipt</li>
+          <li>ID of Authorized Representative</li>
+          <li>ID of expired person</li>
+          <li>Proof of Relationship (Birth Certificate) Photocopy</li>
+          <li>Marriage Contract and Authorization Letter</li>
+          <li>Certification of Outstanding Debts or Payable Obligations (Original or Certified True Copy)</li>
+        </ol>
+      </div>
+      <br />
+      <div class="links">
+        <a href="#" id="quali-link"
+          >Click here to Read Qualifications/Eligibility</a
+        >
+        <a href="#" id="reqs-link">Click here to Read Requirements</a>
+      </div>
+
+      <div class="pagination">
+        <a href="aics.html" onclick="showPage('aics')">Back</a>
+        <a href="assistance1.html" onclick="showPage(1)">1</a>
+        <a href="assistance2.html" onclick="showPage(2)">2</a>
+        <a href="assistance3.html" onclick="showPage(3)" class="active">3</a>
+        <a href="assistance4.html" onclick="showPage(4)">4</a>
+        <a href="assistance5.html" onclick="showPage(5)">5</a>
+        <a href="assistance6.html" onclick="showPage(6)">6</a>
+        <a href="assistance7.html" onclick="showPage(7)">7</a>
+        <a href="assistance4.html" onclick="showPage('next')">Next</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contentText = document.getElementById("content-text");
+        const Quali = document.getElementById("Quali");
+        const Reqs = document.getElementById("Reqs");
+
+       
+        Quali.style.display = "none";
+        Reqs.style.display = "none";
+
+     
+        document.getElementById("quali-link").addEventListener("click", function (e) {
+          e.preventDefault();
+          contentText.style.display = "none";
+          Reqs.style.display = "none";
+          Quali.style.display = Quali.style.display === "none" ? "block" : "none";
+        });
+
+       
+        document.getElementById("reqs-link").addEventListener("click", function (e) {
+          e.preventDefault();
+          contentText.style.display = "none";
+          Quali.style.display = "none";
+          Reqs.style.display = Reqs.style.display === "none" ? "block" : "none";
+        });
+
+        function showPage(page) {
+          const links = document.querySelectorAll(".pagination a");
+
+          links.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          if (event.target.classList.contains("pagination")) {
+            event.target.classList.add("active");
+          }
+
+          console.log("Navigating to page:", page);
+        }
+      });
+    </script>
+  </body>
+</html>

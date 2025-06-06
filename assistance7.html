@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistance - Municipal Social Welfare and Development Office</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #e62727, #9e154b, #3a116b);
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        align-items: center;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+
+      .logo {
+        height: 60px;
+        width: auto;
+      }
+
+      .text-group {
+        text-align: center;
+      }
+
+      .text-group h3 {
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .main-content {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+      }
+
+      .content-title {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .content-text {
+        margin-bottom: 25px;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .links {
+        margin-bottom: 30px;
+      }
+
+      .links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        transition: opacity 0.3s;
+      }
+
+      .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+      }
+
+      .pagination a {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+
+        .logo {
+          max-width: 80px;
+          height: auto;
+          margin: 10px 0;
+        }
+
+        .text-group {
+          padding: 10px;
+        }
+
+        .text-group h3 {
+          font-size: 14px;
+        }
+
+        .content-title {
+          font-size: 1.5rem;
+        }
+
+        .content-text {
+          font-size: 0.9rem;
+        }
+
+        .pagination a {
+          padding: 6px 12px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          max-width: 60px;
+        }
+
+        .text-group h3 {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+
+        .content-title {
+          font-size: 1.3rem;
+        }
+
+        .content-text {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+        <div class="text-group">
+          <h3>REPUBLIC OF THE PHILIPPINES</h3>
+          <h3>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h3>
+          <h3>ALAMINOS, LAGUNA</h3>
+        </div>
+        <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1 class="content-title">Psychosocial Supports</h1>
+      <p class="content-text" id="content-text">
+        It is a set of intervention that intends to positively improve person’s behaviour to reduce the impact of stress brought about by a crisis through behavioural modification interventions. Social Work Counselling-to help the clients gain insights into their feelings and which affects their behaviours, and/or enable them to process their thoughts and feelings. This also identifies potential solutions to the issues at hand for crisis situations.
+      </p>
+      <br />
+      <div class="Quali hidden" id="Quali">
+        <h2>Criteria of Eligibility:</h2>
+        <br />
+        <li>Must be a resident in the municipality</li>
+        <li>
+          Must be experiencing emotional, psychological, or social distress due
+          to a crisis situation.
+        </li>
+        <li>
+          Must be willing to undergo psychosocial interventions, including
+          counseling, therapy, or support programs.
+        </li>
+        <br /><br />
+        <h2>Qualifying Crisis Situations</h2>
+        Applicants may be eligible for psychosocial support if they are affected
+        by any of the following:
+        <br /><br />
+        <ol>
+          <h3>a. Trauma and Emotional Distress</h3>
+        </ol>
+        <li>
+          Individuals experiencing grief, loss, or emotional breakdown due to
+          the death of a loved one, separation, or abandonment.
+        </li>
+        <li>
+          Survivors of violent crimes, accidents, or sudden traumatic incidents.
+        </li>
+        <li>
+          Individuals struggling with extreme anxiety, depression, or
+          post-traumatic stress disorder (PTSD) following a crisis.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>b. Disaster and Emergency Situations</h3>
+        </ol>
+        <li>
+          Individuals and families affected by natural disasters (e.g.,
+          typhoons, earthquakes, fires, floods) leading to psychological
+          distress.
+        </li>
+        <li>
+          Survivors of man-made disasters (e.g., armed conflict, forced
+          eviction, community violence).
+        </li>
+        <li>
+          People who have been displaced or relocated due to calamities,
+          conflicts, or demolition.
+        </li>
+        <br /><br />
+        <ol>
+          <h3>c. Abuse and Violence-Related Cases</h3>
+        </ol>
+        <li>
+          Survivors of domestic violence, physical or emotional abuse, sexual
+          abuse, or neglect.
+        </li>
+        <li>Victims of human trafficking, forced labor, or exploitation.</li>
+        <li>
+          Individuals suffering from bullying or discrimination, including those
+          from marginalized groups.
+        </li>
+        <br><br>
+        <ol>
+          <h3>d. Mental Health and Social Functioning Concerns</h3>
+        </ol>
+        <li>
+          Individuals facing severe stress, anxiety, depression, or other mental
+          health concerns affecting their daily life.
+        </li>
+        <li>
+          Persons who engage in self-harm, substance abuse, or suicidal ideation
+          due to crisis situations.
+        </li>
+        <li>
+          Families with children, elderly members, or persons with disabilities
+          (PWDs) experiencing emotional or social distress.
+        </li>
+      </div>
+      <br />
+      <div class="Reqs hidden" id="Reqs">
+        <ol>
+          <h3>Requirements</h3>
+          <br />
+          <li>
+            Updated Original Certificate of Indigency from Barangay with proof
+            of low income
+          </li>
+          <li>Valid ID (Photocopy)</li>
+          <li>Marriage Certificate or Birth Certificate</li>
+          <li>
+            Referral Letter from Social Worker, Barangay Officer, or Mental
+            Health Professional
+          </li>
+          <li>
+            Medical or Psychological Report (if applicable, for cases related to
+            diagnosed mental health conditions)
+          </li>
+          <li>
+            Police or Legal Report (if applicable, for cases involving abuse,
+            violence, or exploitation)
+          </li>
+          <li>
+            Disaster or Emergency Certification (if applicable, for crisis
+            situations like natural calamities)
+          </li>
+        </ol>
+      </div>
+      <br />
+      <div class="links">
+        <a href="#" id="quali-link"
+          >Click here to Read Qualifications/Eligibility</a
+        >
+        <a href="#" id="reqs-link">Click here to Read Requirements</a>
+      </div>
+
+      <div class="pagination">
+        <a href="aics.html" onclick="showPage('aics')">Back</a>
+        <a href="assistance1.html" onclick="showPage(1)">1</a>
+        <a href="assistance2.html" onclick="showPage(2)">2</a>
+        <a href="assistance3.html" onclick="showPage(3)">3</a>
+        <a href="assistance4.html" onclick="showPage(4)">4</a>
+        <a href="assistance5.html" onclick="showPage(5)">5</a>
+        <a href="assistance6.html" onclick="showPage(6)">6</a>
+        <a href="assistance7.html" onclick="showPage(7)" class="active">7</a>
+        <a href="assistance1.html" onclick="showPage('next')">Next</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contentText = document.getElementById("content-text");
+        const Quali = document.getElementById("Quali");
+        const Reqs = document.getElementById("Reqs");
+
+        Quali.style.display = "none";
+        Reqs.style.display = "none";
+
+        document
+          .getElementById("quali-link")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            contentText.style.display = "none";
+            Reqs.style.display = "none";
+            Quali.style.display =
+              Quali.style.display === "none" ? "block" : "none";
+          });
+
+        document
+          .getElementById("reqs-link")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            contentText.style.display = "none";
+            Quali.style.display = "none";
+            Reqs.style.display =
+              Reqs.style.display === "none" ? "block" : "none";
+          });
+
+        function showPage(page) {
+          const links = document.querySelectorAll(".pagination a");
+
+          links.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          if (event.target.classList.contains("pagination")) {
+            event.target.classList.add("active");
+          }
+
+          console.log("Navigating to page:", page);
+        }
+      });
+    </script>
+  </body>
+</html>
