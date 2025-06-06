@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Municipal Social Welfare and Development Office</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          135deg,
+          #d5002c 0%,
+          #7a2a7e 50%,
+          #004aad 100%
+        );
+        min-height: 100vh;
+        color: white;
+        text-align: center;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        align-items: center;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+
+      .logo {
+        height: 60px;
+        width: auto;
+      }
+
+      .text-group {
+        text-align: center;
+      }
+
+      .text-group h3 {
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .subtitle {
+        margin: 20px 0;
+        font-size: 18px;
+        padding: 10px;
+        text-wrap: wrap;
+      }
+
+      .org-chart {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .org-chart h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 90px 30px;
+      }
+
+      .service-column {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .service-card {
+        background: rgba(221, 221, 221, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+      }
+
+      @media (max-width: 768px) {
+        .service-column {
+          min-width: 100%;
+          padding: 0 10px;
+        }
+        
+        .services {
+          margin: 30px 0;
+        }
+        
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+        }
+        
+        .logo {
+          max-width: 80px;
+          margin: 10px 0;
+        }
+        
+        .text-group {
+          padding: 10px;
+        }
+        
+        .text-group h3 {
+          font-size: 14px;
+        }
+      }
+       @media (max-width: 480px) {
+        .logo {
+          max-width: 60px;
+        }
+        
+        .text-group h3 {
+          font-size: 12px;
+          margin: 3px 0;
+        }
+        
+        .subtitle {
+          font-size: 16px;
+        }
+        
+        .service-card {
+          font-size: 16px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+        <div class="text-group">
+          <h3>REPUBLIC OF THE PHILIPPINES</h3>
+          <h3>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h3>
+          <h3>ALAMINOS, LAGUNA</h3>
+        </div>
+        <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+      </div>
+    </div>
+
+    <h2 class="subtitle">
+      Municipal Social Welfare and Development Office Programs and Services
+    </h2>
+    <br>
+     <div class="services">
+      <div class="service-column">
+          <div class="service-card">CHILDREN</div>
+          <li>Caring Healing Teaching Framework/ Treatment Plan for Children</li>
+          <li>Advocacy IEC on Children’s Laws</li>
+          <li>Positive Discipline Modules</li>
+          <li>Day Care Service</li>
+          <li>Supplementary Feeding Program</li>
+          <li>Supervised Neighborhood Play (ECCD/SNP)</li>
+          <li>Children in Need of Special Protection (CNSP)</li>
+          <li>Children in Conflict with Law (CICL)/ Diversion Contract</li>
+          <li>Child Abuse Prevention & Intervention Network (CAPIN)</li>
+          <li>Counseling</li>
+          <li>Children Assisted for Court Proceedings</li>
+          <li>Children Summit</li>
+          <li>Life Skills Training</li>
+          <li>Play Therapy</li>
+          <li>Kids Teens Court Orientation</li>
+          <br>
+          <div class="service-card">YOUTH</div>
+          <li>Municipal Scholar/ SPES</li>
+          <li>After Care and Follow-Up Services</li>
+          <li>Youth Summit</li>
+          <li>Seminar on Teenage Pregnancy/ Pre-marital Sex</li>
+          <li>Capacity Building for Youth</li>
+          <li>Daily Vacation Bible School</li>
+          <li>Leadership Training</li>
+          <li>Alternative Learning School</li>
+          <li>Program for Out of School Youth</li>
+          <li>Organization of Out of School Youth/ In School Youth for PAG-ASA Youth Movement</li>
+          <li>Sports Activities</li>
+          <li>Life Skills Training</li>
+          <li>Kids Teens Court Orientation</li>
+          <li>Play Therapy</li>
+      </div>
+    </div>
+  </body>
+</html>
