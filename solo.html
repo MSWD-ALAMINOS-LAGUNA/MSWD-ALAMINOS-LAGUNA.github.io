@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSWD SOLO PARENT</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon">
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #004aad;
+            --secondary-color: #ffffff;
+            --accent-color: #ffcc00;
+            --text-color: #333333;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-gray);
+        }
+        
+        /* Header styles */
+        .header {
+            padding: 1rem 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .text-group h3 {
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+        
+        /* Navigation */
+        .toc {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .toc-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .toc ul {
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+        }
+        
+        .toc li {
+            margin-right: 1.5rem;
+            white-space: nowrap;
+        }
+        
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .subtitle {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-color);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Section styles */
+        .section {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        
+        /* Scrollable legal provisions */
+        .scrollable-content {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 1rem;
+        }
+        
+        .scrollable-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        /* Blockquote styles */
+        blockquote {
+            background-color: var(--medium-gray);
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .text-group {
+                margin: 1rem 0;
+            }
+            
+            .toc ul {
+                flex-direction: column;
+                overflow-x: visible;
+            }
+            
+            .toc li {
+                margin-bottom: 0.5rem;
+            }
+            
+            .scrollable-content {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo">
+            <div class="text-group">
+                <h3>REPUBLIC OF THE PHILIPPINES</h3>
+                <h3>MUNICIPAL SOCIAL WELFARE AND DEVELOPMENT OFFICE</h3>
+                <h3>ALAMINOS, LAGUNA</h3>
+            </div>
+            <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo">
+        </div>
+    </header>
+
+    <nav class="toc">
+        <div class="toc-container">
+            <ul>
+                <li><a href="#about">About Solo Parents</a></li>
+                <li><a href="#legal-provisions">Legal Provisions</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="intro">
+            <h1 class="subtitle">SOLO PARENT</h1>
+            <p>An Act Granting Additional Benefits to Solo Parents, Amending for the Purpose <a href="https://pcw.gov.ph/republic-act-8972-solo-parents-welfare-act-of-2000/" class="link-solo">REPUBLIC ACT NO. 8972</a>, Entitled "An Act Providing for Benefits and Privileges to Solo Parents and Their Children, Appropriating Funds Therefor and for Other Purposes"</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">What is a Solo Parent?</h2>
+            <p>Under <a href="https://pcw.gov.ph/republic-act-no-11861-expanded-solo-parents-welfare-act/" class="link-solo">RA 11861</a>, a solo parent is someone who provides sole parental care and support to a child or children in any of these situations:</p>
+            <ul>
+                <li>The other parent is deceased, imprisoned, physically/mentally incapacitated, legally separated, or abandoned for at least six months.</li>
+                <li>An unmarried parent raising a child.</li>
+                <li>A guardian, adoptive, foster parent, or close relative up to the 4th civil degree who assumes sole care.</li>
+                <li>The spouse or family member of a low-skilled OFW who's been away at least 12 months.</li>
+                <li>A pregnant woman for her unborn child.</li>
+            </ul>
+        </section>
+
+        <section id="legal-provisions" class="section">
+            <h2 class="section-title">Legal Provisions</h2>
+            <div class="scrollable-content">
+                <h3>Section 1</h3>
+                <p>Section 1 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 1. Title. – This Act shall be known as the 'Expanded Solo Parents Welfare Act."</p>
+                </blockquote>
+                
+                <h3>Section 2</h3>
+                <p>Section 2 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 2. Declaration of Policy. – It is the policy of the State to promote a just and dynamic social order that ensures the prosperity and independence of the nation and free the people from poverty through policies that provide adequate social services, promote full employment, a rising standard of living and an improved quality of life."</p>
+                </blockquote>
+                
+                <h3>Section 3</h3>
+                <p>Section 3 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 3. Definition of Terms. – As used in this Act:</p>
+                    <p>(a) Child minding centers refers to a facility or area within the workplace or in accessible locations to the solo parent or workplace of the guardian provided by the employer where the children of a solo parent employee aged seven (7) years old and below are habitually received for purposes of care and supervision during working hours;</p>
+                    <p>(b) Children or dependents refer to those living with and dependent upon the solo parent for support who are unmarried, unemployed and twenty-two (22) years old or below, or those over twenty-two (22) years old but who are unable to fully take care or protect themselves from abuse, neglect, cruelty, exploitation, or discrimination because of a physical or mental disability or condition;"</p>
+                </blockquote>
+                
+                <h3>Section 4</h3>
+                <p>Section 4 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 4. Categories of Solo Parent. – A solo parent refers to any individual who falls under any of the following categories:</p>
+                    <p>(a) A parent who provides sole parental care and support of the child or children due to –</p>
+                    <p>(1) Birth as a consequence of rape, even without final conviction: Provided, That the mother has the sole parental care and support of the child or children: Provided, further, That the solo parent under this category may still be considered a solo parent under any of the categories in this section;</p>
+                    <p>(2) Death of the spouse;</p>
+                    <p>(3) Detention of the spouse for at least three (3) months or service of sentence for a criminal conviction;</p>
+                    <p>(4) Physical or mental incapacity of the spouse as certified by a public or private medical practitioner;</p>
+                    <p>(5) Legal separation or de facto separation for at least six (6) months, and the solo parent is entrusted with the sole parental care and support of the child or children;</p>
+                    <p>(6) Declaration of nullity or annulment of marriage, as decreed by a court recognized by law, or due to divorce, subject to existing laws, and the solo parent is entrusted with the sole parental care and support of the child or children; or</p>
+                    <p>(7) Abandonment by the spouse for at least six (6) months;"</p>
+                </blockquote>
+                
+                <h3>Section 5</h3>
+                <p>Section 5 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 5. Comprehensive Package of Social Protection Services. – A comprehensive package of social protection services for solo parents and their families shall be developed by the Secretary of the Department of Social Welfare and Development (DSWD) in coordination with the heads of the Department of Health (DOH), Department of Education (DepEd), Commission on Higher Education (CHED), Technical Education and Skills Development Authority (TESDA), Department of Labor and Employment (DOLE), Department of Finance (DOF), Department of Migrant Workers (DMW), Department of Justice (DOJ), National Housing Authority (NHA), Department of the Interior and Local Government (DILG), Department of Trade and Industry (DTI), Bureau of Internal Revenue (BIR), Civil Service Commission (CSC), Philippine Health Insurance Corporation (PhilHealth), National Economic and Development Authority (NEDA), Philippine Commission on Women (PCW), Union of Local Authorities of the Philippines (ULAP), local government units (LGUs) and other concerned nongovernmental organizations (NGOs) with recognized credentials in providing services for solo parents."</p>
+                </blockquote>
+                
+                <h3>Section 6</h3>
+                <p>Section 7 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 7. Work Discrimination. – No employer shall discriminate against any solo parent employee with respect to terms and conditions of employment on account of his or her status. Employers may enter into agreements with their solo parent employees for a telecommuting program, as provided in Republic Act No. 11165, otherwise known as the 'Telecommuting Act': Provided, That said solo parent employees shall be given priority by their employer."</p>
+                </blockquote>
+                
+                <h3>Section 7</h3>
+                <p>Section 8 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 8. Parental Leave. – In addition to leave privileges under existing laws, a forfeitable and noncumulative parental leave of not more than seven (7) working days with pay every year shall be granted to any solo parent employee, regardless of employment status, who has rendered service of at least six (6) months: Provided, That the parental leave benefit may be availed of by the solo parent employees in the government and the private sector."</p>
+                </blockquote>
+                
+                <h3>Section 8</h3>
+                <p>Section 9 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 9. Educational Benefits. – The DepEd, CHED, and TESDA shall provide scholarship programs for solo parents and a full scholarship for one (1) child of a solo parent in institutions of basic, higher and technical vocational skills education: Provided, That the said solo parent or child of a solo parent has all the qualifications set for the scholarship program of the DepEd, CHED, or TESDA: Provided, further, That the other children, if any, of a solo parent shall be given priority in the education programs under Republic Act No. 10687, otherwise known as the 'Unified Student Financial Assistance System for Tertiary Education (UniFAST) Act', Republic Act No. 10931 otherwise known as the 'Universal Access to Quality Tertiary Education Act', and other laws relating to education programs of the government."</p>
+                </blockquote>
+                
+                <h3>Section 9</h3>
+                <p>Section 10 of Republic Act No. 8972 is amended to read as follows:</p>
+                <blockquote>
+                    <p>"Section 10. Child Minding Centers. – The DOLE and the CSC shall promote and encourage the establishment of appropriate child minding centers within the workplace, or in accessible locations to the workplace or residence of the solo parent."</p>
+                </blockquote>
+                
+                <h3>Section 10</h3>
+                <p>A new section to be denominated as Section 13 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 13. Breastfeeding in the Workplace. – In keeping with the policy of the State under Republic Act No. 10028, otherwise known as the 'Expanded Breastfeeding Promotion Act of 2009', the DOLE and the CSC shall continue to encourage working mothers, who are solo parents, to practice breastfeeding in the workplace."</p>
+                </blockquote>
+                
+                <h3>Section 11</h3>
+                <p>A new section to be denominated as Section 14 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 14. Social Safety Assistance. – During disasters, calamities, pandemics, and other public health crises as may be declared by the DOH, the solo parents and their children are entitled to social safety assistance such as food, medicines, and financial aid for domicile repair in the LGUs where the solo parents and their children are residing, subject to the guidelines of the DSWD. The LGUs shall ensure that the budget for social safety assistance is included in the calamity funds of LGUs."</p>
+                </blockquote>
+                
+                <h3>Section 12</h3>
+                <p>A new section to be denominated as Section 15 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 15. Additional Benefits. – A solo parent shall be entitled to the following additional benefits:</p>
+                    <p>(a) Means-, pension-, and subsidy-tested monthly cash subsidy of One thousand pesos (P1,000.00) per month per solo parent who is earning a minimum wage and below, to be allocated by the concerned city or municipal government in accordance with Section 17(b)(2)(iv) of the Local Government Code: Provided, That for fifth (5th) class municipalities and lower, as well as the five hundred (500) municipalities with the highest poverty incidence based on the latest municipal-level small area poverty estimates, cash subsidy allocations may be taken from the Gender and Development (GAD) budget and the amount of cash subsidy per recipient may be dependent on the amount of the GAD budget: Provided, further, That the solo parent under this section is not a recipient of any other cash assistance or subsidy from any other government programs: Provided, finally, That a beneficiary who is also a senior citizen or a person with disability (PWD) may continue receiving senior citizen or PWD benefits without forfeiting the benefits under this Act;</p>
+                    <p>(b) A ten percent (10%) discount and exemption from the value-added tax (VAT) on baby's milk, food and micronutrient supplements, and sanitary diapers purchased, duly prescribed medicines, vaccines, and other medical supplements purchased from the birth of the child or children until six (6) years of age of a solo parent who is earning less than Two hundred fifty thousand pesos (P250,000.00) annually, subject to adjustment in accordance with the provisions on the exempt taxable income under the National Internal Revenue Code (NIRC), as amended by Republic Act No. 10963, otherwise known as the 'Tax Reform for Acceleration and Inclusion (TRAIN)';</p>
+                    <p>(c) Automatic coverage under the National Health Insurance Program (NHIP) being administered by the PhilHealth with premium contributions to be paid by the National Government: Provided, That the premium contribution of solo parents in the formal economy shall be shared equally by their employees and the National Government;</p>
+                    <p>(d) Prioritization of solo parents, particularly solo mothers in re-entering the work force, and their children as applicable, in apprenticeships, scholarships, livelihood training, reintegration programs for OFWs, employment information and matching services, and other poverty alleviation programs of the TESDA, DTI, CHED, DepEd, DOLE, DMW and other related government agencies, subject to the standard eligibility and qualifications;</p>
+                    <p>(e) Prioritization and allocation in housing projects with liberal terms of payment on government low-cost housing projects in accordance with housing law provisions prioritizing applicants below poverty line as declared by the Philippine Statistics Authority (PSA).</p>
+                </blockquote>
+                
+                <h3>Section 13</h3>
+                <p>A new section to be denominated as Section 16 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 16. Limitation and Termination of the Benefits of a Solo Parent. – Only a solo parent exercising sole parental care and support of the child or children is entitled to claim the benefits of solo parent under this Act: Provided, That a solo parent shall not lose his or her status as solo parent if the other parent provides occasional assistance and/or seasonal gifts that do not meet the legal requirement of support under The Family Code of the Philippines: Provided, further, That the absence of a valid and legal marriage between the mother and father of a child or dependent does not automatically entitle either individual to the benefits under this Act if the factual circumstances demonstrate that parental care and support are shared."</p>
+                </blockquote>
+                
+                <h3>Section 14</h3>
+                <p>A new section to be denominated as Section 17 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 17. The Solo Parents Office or Division. – There shall be established a Solo Parent Office (SPO) in every province and city and a Solo Parent Division (SPD) under the Municipal Social Welfare and Development Office in every municipality."</p>
+                </blockquote>
+                
+                <h3>Section 15</h3>
+                <p>A new section to be denominated as Section 18 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 18. Recording and Maintaining a Solo Parents Database. – The DSWD, in coordination with the DILG, shall establish and maintain a centralized database of all solo parents who have been issued SPIC or booklets by the SPOs and SPDs. To this end, the LGUs shall submit the list of solo parents receiving benefits under this Act to the DSWD on a quarterly basis."</p>
+                </blockquote>
+                
+                <h3>Section 16</h3>
+                <p>A new section to be denominated as Section 19 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 19. Documentary Requirements. – For purposes of registration and issuance of SPIC and booklet, the solo parent shall submit authenticated or certified true copies of the following documents to the SPO or SPD where the solo parent resides:"</p>
+                </blockquote>
+                
+                <h3>Section 17</h3>
+                <p>A new section to be denominated as Section 20 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 20. SPIC and Booklet. – The SPO of the province or city, or the SPD of the municipality shall review and verify the documents submitted by the applicant and shall issue the SPIC and booklet, if applicable, within seven (7) working days from receipt of complete documents. In case of dispute, the Municipal/City/Provincial Social Welfare and Development Office (M/C/PSWDO), as the case may be, shall resolve the same within five (5) working days."</p>
+                </blockquote>
+                
+                <h3>Section 18</h3>
+                <p>A new section to be denominated as Section 21 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 21. National Solo Parents Day and Week. – To commemorate the role and significance of every solo parent in the Philippines, the third week and third Saturday of April of every year are hereby declared as Solo Parents Week and National Solo Parents Day, respectively."</p>
+                </blockquote>
+                
+                <h3>Section 19</h3>
+                <p>A new section to be denominated as Section 22 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 22. Abused, Abandoned, or Neglected Solo parents or Solo Parents Who are Victims of Domestic Violence. – In cases where a solo parent has been abused, abandoned, or neglected by his or her co-parent, he or she may seek the help of the DSWD, which, in turn, shall coordinate with the respective barangay officials and/or police officers assigned in the nearest Philippine National Police station where the abused, abandoned, or neglected parent resides, in order to provide immediate assistance. If the co-parent is gainfully employed, the abused, abandoned, or neglected parent shall have the right to retain a portion of the former's income, to be agreed upon by both parents or by a valid order issued by a court of competent jurisdiction, for the support of the child."</p>
+                </blockquote>
+                
+                <h3>Section 20</h3>
+                <p>A new section to be denominated as Section 23 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 23. Special Protections for Adolescent Solo Parents. – In addition to the provisions of this Act, adolescent solo parents, including victims of child marriages, shall also be provided with assistance from the DSWD and the DOH which may include counseling and psycho-social services, and from the DepEd, CHED, and TESDA in the form of home-based, in-school, or technical education, as warranted."</p>
+                </blockquote>
+                
+                <h3>Section 21</h3>
+                <p>A new section to be denominated as Section 24 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 24. Inter-Agency Coordinating and Monitoring Committee. – An Inter-Agency Coordinating and Monitoring Committee (IACMC) is hereby established and is composed of the following:"</p>
+                </blockquote>
+                
+                <h3>Section 22</h3>
+                <p>A new section to be denominated as Section 25 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 25. Joint Congressional Oversight Committee on Solo Parents. – There is hereby created a Joint Congressional Oversight Committee on Solo Parents (JCOCSP), to monitor the implementation of this Act. The JCOCSP shall set the overall framework for reviewing the implementation of this Act, determining inherent vulnerabilities in the law, and recommending the necessary legislative or executive measures."</p>
+                </blockquote>
+                
+                <h3>Section 23</h3>
+                <p>A new section to be denominated as Section 26 of the same Act is hereby added to read as follows:</p>
+                <blockquote>
+                    <p>"Section 26. Prohibited Acts and Penalties. – (a) Any person, corporation, entity or agency that refuses or fails to provide the benefits granted to the solo parent in violation of this Act shall suffer the following penalties:</p>
+                    <p>(1) For the first violation – a fine of not less than Ten thousand pesos (P10,000.00) but not more than Fifty thousand pesos (P50,000.00) or imprisonment of not less than six (6) months but not more than one (1) year, or both, at the discretion of the court.</p>
+                    <p>(2) For any subsequent violation – a fine of not less than One hundred thousand pesos (P100,000.00) but not more than Two hundred thousand pesos (P200,000.00) or imprisonment of not less than than one (1) year but not more than two (2) years, or both at the discretion of the court.</p>
+                    <p>If the offender is a corporation, partnership, organization or any similar entity, the officials and employees who directly participated in the violation/s shall be held liable.</p>
+                    <p>The proper authorities may, after due notice and hearing, also cause the cancellation or revocation of the business permit, permit to operate, franchise and other similar privileges granted to any business that fails to abide by the provisions of this Act.</p>
+                    <p>If the offender is a foreigner, the foreigner shall be deported immediately after service of sentence without further deportation proceedings.</p>
+                    <p>(b) Any person who misrepresents status or falsifies any document to avail of the benefits, or cause another person to avail or be denied of the benefits provided under this Act, or any person who abuses the privileges and benefits granted herein shall be punished with a fine of not more than Fifty thousand pesos (P50,000.00) and imprisonment of not less than six (6) months but not more than one (1) year, or both, at the discretion of the court.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2 class="section-title">Benefits for Solo Parents</h2>
+            <p>Section 15 outlines additional benefits for solo parents:</p>
+            <blockquote>
+                <p>(a) Monthly cash subsidy of One thousand pesos (P1,000.00) per month per solo parent who is earning a minimum wage and below.</p>
+                <p>(b) 10% discount and exemption from VAT on baby's milk, food and micronutrient supplements, and sanitary diapers purchased.</p>
+                <p>(c) Automatic coverage under the National Health Insurance Program.</p>
+            </blockquote>
+        </section>
+
+        <section id="requirements" class="section">
+            <h2 class="section-title">Documentary Requirements</h2>
+            <p>Section 19 outlines the requirements for registration and issuance of SPIC and booklet:</p>
+            <blockquote>
+                <p>For different categories of solo parents, various documents are required including:</p>
+                <p>- Birth certificates</p>
+                <p>- Marriage certificates (when applicable)</p>
+                <p>- Sworn affidavits</p>
+                <p>- Medical records (when applicable)</p>
+            </blockquote>
+        </section>
+
+        <section id="resources" class="section">
+            <h2 class="section-title">Resources</h2>
+            <div class="service-column">
+                <a href="index.html">
+                    <div class="service-card">Back to Home</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <footer>
+        <p>&copy; 2025 Municipal Social Welfare and Development Office, Alaminos, Laguna</p>
+    </footer>
+</body>
+</html>
