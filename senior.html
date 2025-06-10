@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Citizens | Alaminos, Laguna</title>
+    <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #FFD700;
+            --secondary-color: #FFFFFF;
+            --accent-color: #FFA500;
+            --text-color: #333333;
+            --light-gray: #F5F5DC;
+            --medium-gray: #E6E6FA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-gray);
+        }
+        
+        /* Header styles */
+        .header {
+            padding: 1rem 0;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .text-group h3 {
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+        
+        /* Navigation */
+        .toc {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .toc-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .toc ul {
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+        }
+        
+        .toc li {
+            margin-right: 1.5rem;
+            white-space: nowrap;
+        }
+        
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .subtitle {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-color);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Section styles */
+        .section {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--accent-color);
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .text-group {
+                margin: 1rem 0;
+            }
+            
+            .toc ul {
+                flex-direction: column;
+                overflow-x: visible;
+            }
+            
+            .toc li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+            <div class="text-group">
+                <h3>REPUBLIC OF THE PHILIPPINES</h3>
+                <h3>NATIONAL COMMISSION OF SENIOR CITIZENS</h3>
+                <h3>MUNICIPALITY OF ALAMINOS, LAGUNA</h3>
+            </div>
+            <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+        </div>
+    </header>
+
+    <nav class="toc">
+        <div class="toc-container">
+            <ul>
+                <li><a href="#about">About NCSC</a></li>
+                <li><a href="#registration">Senior Registration</a></li>
+                <li><a href="#benefits">Senior Benefits</a></li>
+                <li><a href="#programs">Core Programs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="intro">
+            <h1 class="subtitle">Senior Citizens </h1>
+            <p>Welcome to the official portal for Senior Citizens in Alaminos, Laguna. This site provides information about registration, benefits, and programs available to senior citizens in our municipality.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About NCSC</h2>
+            <p>The National Commission of Senior Citizens (NCSC) was established to promote the welfare and interests of senior citizens in the Philippines. By the year 2030, the Philippines will have a significant aging population, with Senior Citizens comprising 8.5 percent of the household population.</p>
+            <p>Defined as individuals aged 60 years old and over, this demographic totaled 9.22 million in 2020, rising from 7.53 million in 2015. Females constituted a higher percentage of this population.</p>
+        </section>
+
+        <section id="registration" class="section">
+            <h2 class="section-title">Senior Citizen Registration</h2>
+            <p>Join our community and register online to be counted. Building a reliable database of all Filipino Senior Citizens helps us better serve this important demographic.</p>
+            <blockquote>
+                <p>The Senior Citizens Data Form (SCDF) is recommended for those without internet access. It is strongly recommended to register online and immediately obtain a system-generated registration reference number or RRN.</p>
+            </blockquote>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2 class="section-title">Benefits for Senior Citizens</h2>
+            <p>Senior citizens in the Philippines are entitled to various benefits and discounts:</p>
+            <ul>
+                <li>20% discount on medications (as per DOH Administrative Order No. 2010-0032)</li>
+                <li>PhilHealth Konsulta package providers offering expanded services</li>
+                <li>Various discounts and benefits under Republic Act No. 9994, "The Expanded Senior Citizens Act of 2010"</li>
+            </ul>
+        </section>
+
+        <section id="programs" class="section">
+            <h2 class="section-title">Core Programs</h2>
+            <p>NCSC offers several core programs to support senior citizens:</p>
+            <blockquote>
+                <p>"Pursuant to Section 2 of Republic Act (RA) No. 11350, the NCSC shall promote the advocacy of and collaboration between different stakeholders and senior citizens (SCs) to ensure the effective implementation of various programs and services, particularly on the development of SCs and advancing their health, and well-being."</p>
+            </blockquote>
+            <p>These programs include:</p>
+            <ul>
+                <li>Advocacy and collaboration initiatives</li>
+                <li>Health and wellness programs</li>
+                <li>Supportive environment development</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Get in touch with the NCSC for any inquiries or concerns:</p>
+            <p><strong>Address:</strong><br>
+            NCR<br>
+            8F AAP Tower, Aurora Blvd., New Manila, Quezon City<br>
+            CENTRAL OFFICE<br>
+            4F AAP Tower, Aurora Blvd., New Manila, Quezon City</p>
+            <p><strong>Email:</strong><br>
+            For general concerns: contact@ncsc.gov.ph<br>
+            For Online Registration concerns: registration@ncsc.gov.ph</p>
+            <p><strong>Phone:</strong><br>
+            For frequently asked questions, please visit our FAQ section.</p>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <footer>
+        <p>&copy; 2025 National Commission of Senior Citizens - Municipality of Alaminos, Laguna</p>
+    </footer>
+</body>
+</html>
