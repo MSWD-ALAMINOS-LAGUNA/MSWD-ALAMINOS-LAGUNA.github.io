@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWD ID Information | Alaminos, Laguna</title>
+   <link rel="icon" href="./Assets/dswd-logo.png" type="image/x-icon" />
+    <style>
+        /* Base styles */
+        :root {
+            --primary-color: #FFD700;
+            --secondary-color: #FFFFFF;
+            --accent-color: #FFA500;
+            --text-color: #333333;
+            --light-gray: #F5F5DC;
+            --medium-gray: #E6E6FA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-gray);
+        }
+        
+        /* Header styles */
+        .header {
+            padding: 1rem 0;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .text-group h3 {
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+        
+        /* Navigation */
+        .toc {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .toc-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .toc ul {
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+        }
+        
+        .toc li {
+            margin-right: 1.5rem;
+            white-space: nowrap;
+        }
+        
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .subtitle {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--primary-color);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Section styles */
+        .section {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--accent-color);
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .text-group {
+                margin: 1rem 0;
+            }
+            
+            .toc ul {
+                flex-direction: column;
+                overflow-x: visible;
+            }
+            
+            .toc li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header class="header">
+        <div class="header-content">
+            <img src="./Assets/Alam150.png" alt="Philippine Seal" class="logo" />
+            <div class="text-group">
+                <h3>REPUBLIC OF THE PHILIPPINES</h3>
+                <h3>NATIONAL COMMISSION OF SENIOR CITIZENS</h3>
+                <h3>MUNICIPALITY OF ALAMINOS, LAGUNA</h3>
+            </div>
+            <img src="./Assets/dswd-logo.png" alt="Heart Logo" class="logo" />
+        </div>
+    </header>
+
+    <nav class="toc">
+        <div class="toc-container">
+            <ul>
+                <li><a href="#about">About PWD ID</a></li>
+                <li><a href="#benefits">PWD Benefits</a></li>
+                <li><a href="#application">Application Process</a></li>
+                <li><a href="#renewal">Renewal Process</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="intro">
+            <h1 class="subtitle">PWD ID Information</h1>
+            <p>Welcome to the official portal for Persons with Disabilities (PWDs) in Alaminos, Laguna. This site provides information about PWD ID, benefits, and programs available to PWDs in our municipality.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About PWD ID</h2>
+            <p>The PWD ID is the mandatory identification card given for persons with disabilities in the Philippines. It is issued by the Persons with Disability Affairs Office (PDAO) or the city or municipal Social Welfare and Development Office where the PWD resides.</p>
+            <blockquote>
+                <p>"PWD ID stands for Person with Disability Identification Card. It is a form of identification issued to individuals with disabilities in the Philippines. The PWD ID serves as proof of disability and provides certain privileges and benefits to the cardholder, such as discounts on goods, services, and transportation, as mandated by the law."</p>
+            </blockquote>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2 class="section-title">PWD Benefits</h2>
+            <p>Having a Person with Disability Identification Card (PWD ID) entitles individuals with disabilities to various benefits and privileges:</p>
+            <ul>
+                <li>20% discount and VAT exemption on various goods and services</li>
+                <li>5% special discount on basic necessities and prime commodities</li>
+                <li>Mandatory coverage under SSS/GSIS, National Health Insurance, and Pag-IBIG</li>
+                <li>Educational assistance</li>
+                <li>Employment assistance</li>
+                <li>Priority privileges in public establishments</li>
+                <li>Special parking privileges</li>
+            </ul>
+        </section>
+
+        <section id="application" class="section">
+            <h2 class="section-title">Application Process</h2>
+            <p>To apply for a Person with Disability Identification Card (PWD ID) in the Philippines, follow these steps:</p>
+            <ol>
+                <li>Prepare the required documents for the application process</li>
+                <li>File your PWD ID application</li>
+                <li>Visit the PDAO during their working hours</li>
+            </ol>
+            <p>For those unable to visit the PDAO office due to their condition, you can designate a representative or request a home visit.</p>
+        </section>
+
+        <section id="renewal" class="section">
+            <h2 class="section-title">Renewal Process</h2>
+            <p>PWD ID cards need to be renewed every five years. The renewal process can be done in-person or online:</p>
+            <ul>
+                <li>For in-person renewals, approach the National Council on Disability Affairs</li>
+                <li>For online renewals, applications must be done through https://srs.doh.gov.ph/servicerequest</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Get in touch with the PDAO for any inquiries or concerns:</p>
+            <p><strong>Address:</strong><br>
+            PDAO Office<br>
+            Alaminos, Laguna</p>
+            <p><strong>Email:</strong><br>
+            pdao.alaminos@gmail.com</p>
+            <p><strong>Phone:</strong><br>
+            (049) 555-1234</p>
+        </section>
+
+        <section id="resources" class="section">
+            <h2 class="section-title">Resources</h2>
+            <div class="service-column">
+                <a href="index.html">
+                    <div class="service-card">Back to Home</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <footer>
+        <p>&copy; 2025 National Commission on Disability Affairs - LGU of Alaminos, Laguna</p>
+    </footer>
+</body>
+</html>
